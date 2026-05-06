@@ -1,0 +1,11 @@
+{
+  "cli": {
+    "version": ">= 18.0.0"
+  },
+  "build": {
+    "production": {
+      "android": {},
+      "ios": {}
+    }
+  }
+}

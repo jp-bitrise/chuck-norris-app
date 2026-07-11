@@ -10,7 +10,7 @@ export function QuoteCard({ quote, iconUrl }: QuoteCardProps) {
   return (
     <View style={styles.card}>
       {iconUrl ? (
-        <Image source={{ uri: iconUrl }} style={styles.icon} />
+        <Image testID="quote-icon" source={{ uri: iconUrl }} style={styles.icon} />
       ) : null}
       <Text style={styles.quote}>{quote}</Text>
     </View>

@@ -23,7 +23,9 @@ export default function App() {
         <Text style={styles.subtitle}>Daily Wisdom</Text>
 
         <View style={styles.content}>
-          {loading && <ActivityIndicator size="large" color="#e0a800" />}
+          {loading && (
+            <ActivityIndicator testID="activity-indicator" size="large" color="#e0a800" />
+          )}
           {!loading && error && <ErrorView message={error} onRetry={fetchQuote} />}
           {!loading && !error && quote && <QuoteCard quote={quote} iconUrl={iconUrl} />}
         </View>
